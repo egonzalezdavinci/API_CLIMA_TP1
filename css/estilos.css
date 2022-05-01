@@ -1,0 +1,295 @@
+:root {
+    --openSans: 'Open Sans', sans-serif;
+    --sombraTexto: 1px 1px 2px #1C1C1C30;
+    --sombraBorde: 1px 1px 2px #1C1C1C10;
+    --colorPrimario: #FAFAFF;
+	--colorPrimarioOpacity: #fafaff70;
+    --colorSecundario: #DADDD8;
+    --colorTerciario: #ECEBE4;
+    --varianteBlanco: #EEF0F2;
+    --colorNegro: #1C1C1C;
+}
+
+/*https://coolors.co/palette/1c1c1c-daddd8-ecebe4-eef0f2-fafaff*/
+
+body{
+	padding: 0;
+	margin: 0;
+}
+
+.body-container{
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+	position:relative;
+	padding-top:10px;
+	box-sizing: border-box;
+}
+
+.fondoUno{background-image: url(../imagenes/init-clima_3.png) !important;}
+.fondoDos{background-image: url(../imagenes/init-clima_3.png)!important;}
+.fondoTres{background-image: url(../imagenes/init-clima.png)!important;}
+.fondoCuatro{background-image: url(../imagenes/init-clima_2.png)!important;}
+
+.body-container section#main_resultados{
+	position: absolute;
+    top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: space-between;
+	padding: 0px 20px;
+	box-sizing: border-box;
+}
+
+.body-container section#main_resultados #clima{
+	display: flex;
+	background-color: var(--colorPrimarioOpacity);
+    border-radius: 3px;
+    padding: 7px 10px;
+}
+
+.body-container section#main_resultados #clima #climaTemp{
+	display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.body-container section#main_resultados #clima #climaTemp img{
+	width: auto;
+}
+
+.body-container section#main_resultados #clima #climaTemp p{
+	font-size: 47px;
+	color: var(--colorNegro);
+}
+
+.body-container section#main_resultados #clima #tableDatosClima{
+	display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.body-container section#main_resultados #clima #tableDatosClima ul{
+	padding-left:10px;
+}
+
+.body-container section#main_resultados #clima #tableDatosClima li{
+	color: var(--colorNegro);
+	font-size: 14px;
+	list-style: none;
+	border-bottom: 1px solid var(--colorTerciario);
+}
+
+.body-container section#main_resultados #zona{
+	padding-top:20px;
+}
+
+.body-container section#main_resultados #zona h2{
+	font-size: 35px;
+	color: var(--colorNegro);
+	margin:0;
+}
+
+
+p,span,label,a,h1,h2,h3,input,div,button{
+	font-family: var(--openSans);
+}
+
+section h1{
+	margin: 0;
+    color: var(--colorPrimario);
+    font-size: 40px;
+	margin-bottom: 20px;
+}
+
+#porUbicacion{
+	display: none;
+}
+
+
+.contact-form{
+	display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-form #contact-form{
+	text-align: center;
+} 
+
+.contact-form #contact-form button{
+    margin-top: 19px;
+    padding: 7px 8px;
+    width: 100%;
+    max-width: 147px;
+	background-color:var(--colorSecundario);
+	color:var(--negro);
+	border: 1px solid var(--negro);
+	font-size: 1rem;
+}
+
+.contact-form #contact-form button:hover{
+    margin-top: 19px;
+    padding: 7px 8px;
+    width: 100%;
+    max-width: 147px;
+	background-color:var(--colorTerciario);
+}
+
+.contact-form #contact-form button:active{
+    background-color:var(--varianteBlanco);
+}
+
+
+.buscarPor{
+	display: flex;
+	list-style: none;
+	padding: 7px 8px;
+}
+
+.buscarPor li{
+	padding: 7px 8px;
+}
+
+.buscarPor li span{
+	border: 1px solid var(--colorPrimario);
+	padding: 7px 8px;
+	border-radius: 4px;
+	color: var(--colorPrimario);
+	text-shadow: var(--sombraTexto);
+	box-shadow: var(--sombraBorde);
+	cursor: pointer;
+	font-size: 1rem;
+}
+
+
+.buscarPor li span.active{
+	background-color: var(--colorPrimario);
+    text-shadow: none;
+    color: var(--colorNegro);
+    border-color: var(--colorTerciario);
+    background-color: var(--colorTerciario);
+    cursor: default;
+}
+
+#porNombre{
+  font-size: 20px;
+  margin-right: 7px;
+}
+
+#porNombre input:nth-of-type(1){
+	margin-right:10px;
+}
+
+input{
+	padding: 7px 8px;
+    border-radius: 4px;
+    border: 1px solid var(--colorPrimario);
+	height: 40px;
+	width: 220px;
+	font-size: 18px;
+}
+
+input:focus{
+	background-color: var(--colorTerciario);
+	outline:none;
+}
+
+#errorSearch.sinError{
+	display: none;
+}
+
+#errorSearch.errorSearch{
+	display: block;
+}
+
+#errorSearch.errorSearch p{
+    margin: 8px 0 0;
+    color: #af0c0c;
+    font-size: 17px;
+    background-color: #dfcccc;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 3px 20px;	
+}
+
+
+@media only screen and (max-width: 760px) {
+	.body-container {
+		justify-content: flex-start;
+	}
+	.body-container section#main_resultados {
+		display: block;
+		position: relative;
+		top: 0px;
+	}
+	.body-container section#main_resultados #zona {
+		padding-bottom: 20px;
+		text-align: center;
+	}
+	.contact-form {
+		margin-top: 30px;
+	}
+
+}
+
+@media only screen and (max-width: 640px) {
+	.body-container section#main_resultados #clima {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-content: space-around;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	.body-container section#main_resultados #clima #climaTemp {
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: column;
+		align-content: space-around;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	
+	.body-container section#main_resultados #clima #climaTemp p {
+    font-size: 38px;
+	margin:0;
+	}
+
+	.contact-form, #contact-form, #porNombre{
+		width: 100%;
+	}
+	#porNombre label, #porNombre input{
+		display: block;
+		margin-right:0 !important;
+	}
+	
+	#porNombre{
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
+	#porNombre input{
+	width: 100%;
+	height: 45px;
+    box-sizing: border-box;
+	}
+	
+}

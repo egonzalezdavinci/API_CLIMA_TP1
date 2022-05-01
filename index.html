@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/estilos.css" rel="stylesheet" />
+<title>Elias Gonzalez - Aplicaciones Progresivas Web</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+	
+</head>
+<body>
+    <div class="body-container" id="principal">
+	<section id="main_resultados">
+		<div id="zona"></div>
+		<div id="clima">
+			<div id="climaTemp"></div>
+			<div id="tableDatosClima"></div>
+		</div>
+	</section>
+        <section class="contact-form">
+            <div>
+                <h1>Tu clima hoy</h1>
+				<!--
+                <ul class="buscarPor">
+                    <li><span id="buscarclima" class="active">Ingresar ciudad</span></li>
+                    <li><span id="ubicarclima">Danos tu ubicación</span></li>
+                </ul> -->
+            </div>
+                <form id="contact-form">
+                    <div id="porNombre">
+                        <label for="search">Pais:</label>
+                        <input title="Search" id="searchPais" value="" type="text" required />
+                        <label for="searchCiudad">Ciudad:</label>
+                        <input title="Search" id="searchCiudad" value="" type="text" required />
+						<div id="errorSearch" class="sinError"><p id="msjVal"></p></div>
+                    </div>
+					
+                    <!-- <div id="porUbicacion">
+                        <label for="searchUbicacion">Estoy en:</label>
+                        <input title="Search" id="searchUbicacion" value="" type="text" required />
+                    </div>-->
+                    <button id="sendButton" type="button" class="">Enviar</button>
+                </form>
+
+            </section>
+        </div>
+<script src="js/bg_random.js"></script>	
+<script src="js/main.js"></script> 
+</body>
+</html>
