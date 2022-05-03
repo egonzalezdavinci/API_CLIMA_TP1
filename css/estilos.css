@@ -118,15 +118,15 @@ body{
 }
 
 #principal.fondoDos section#main_resultados #zona h2 {
-    color: var(--colorNegro);
+    color: var(--colorPrimario);
 }
 
 #principal.fondoUno section#main_resultados #zona h2 {
-    color: var(--colorPrincipal);
+    color: var(--colorPrimario);
 }
 
 #principal.fondoTres section#main_resultados #zona h2 {
-    color: var(--colorPrincipal);
+    color: var(--colorNegro);
 }
 
 
