@@ -19,17 +19,19 @@ body{
 
 .body-container{
 	background-size: cover;
-	height: 100vh;
-	width: 100%;
-	display: flex;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: space-around;
     justify-content: center;
     align-items: center;
-	position:relative;
-	padding-top:10px;
-	box-sizing: border-box;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
 }
 
 .fondoUno{background-image: url(../imagenes/init-clima_2.png) !important;}
