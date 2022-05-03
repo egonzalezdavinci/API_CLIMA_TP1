@@ -32,10 +32,23 @@ body{
 	box-sizing: border-box;
 }
 
-.fondoUno{background-image: url(../imagenes/init-clima_3.png) !important;}
+.fondoUno{background-image: url(../imagenes/init-clima_2.png) !important;}
 .fondoDos{background-image: url(../imagenes/init-clima_3.png)!important;}
 .fondoTres{background-image: url(../imagenes/init-clima.png)!important;}
 .fondoCuatro{background-image: url(../imagenes/init-clima_2.png)!important;}
+
+#principal.fondoDos section form #porNombre label{
+	color: var(--colorPrimario) !important;
+}
+
+#principal.fondoTres section form #porNombre label{
+	color: var(--colorNegro) !important;
+}
+
+#principal.fondoUno section form #porNombre label{
+	color: var(--colorPrimario) !important;
+}
+
 
 .body-container section#main_resultados{
 	position: absolute;
@@ -101,8 +114,19 @@ body{
 
 .body-container section#main_resultados #zona h2{
 	font-size: 35px;
-	color: var(--colorNegro);
 	margin:0;
+}
+
+#principal.fondoDos section#main_resultados #zona h2 {
+    color: var(--colorNegro);
+}
+
+#principal.fondoUno section#main_resultados #zona h2 {
+    color: var(--colorPrincipal);
+}
+
+#principal.fondoTres section#main_resultados #zona h2 {
+    color: var(--colorPrincipal);
 }
 
 
