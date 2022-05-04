@@ -2,9 +2,8 @@ const API_KEY = '015cb7ec61970f61ed29c3fef4976400';
 const URL_SEARCH = 'https://api.openweathermap.org/data/2.5/weather';
 let API_KEY_YOUTUBE = 'AIzaSyCp5iwALfr9OHxn81fj1e4_3V0G8GwUTmw';
 let URL_YOUTUBE = 'https://www.googleapis.com/youtube/v3/videos?';
+const LENGUAGE = 'sp';
 
-//const LENGUAGE = 'en';
-//https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid={API key}
 const button = document.getElementById('sendButton');
 const inputPais = document.getElementById('searchPais');
 const inputCiudad = document.getElementById('searchCiudad');
@@ -52,7 +51,7 @@ function buscaClima(valorPais,valorCiudad){
 
 	let a = `${URL_SEARCH}?q=${valorCiudad},${valorPais}&appid=${API_KEY}&units=metric`;
 	console.log(a);	
-	fetch(`${URL_SEARCH}?q=${valorCiudad},${valorPais}&appid=${API_KEY}&units=metric`)
+	fetch(`${URL_SEARCH}?q=${valorCiudad},${valorPais}&appid=${API_KEY}&lang=${LENGUAGE}&units=metric`)
 	.then(function(response){
 		return response.json();
 
